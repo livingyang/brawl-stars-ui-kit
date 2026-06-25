@@ -11,6 +11,10 @@ const config: StorybookConfig = {
     "@storybook/addon-a11y",
     "@storybook/addon-docs"
   ],
-  "framework": "@storybook/vue3-vite"
+  "framework": "@storybook/vue3-vite",
+  async viteFinal(config) {
+    config.base = '/brawl-stars-ui-kit/';
+    return config;
+  },
 };
 export default config;
