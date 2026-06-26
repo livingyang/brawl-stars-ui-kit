@@ -5,6 +5,14 @@ import heroImg from '../assets/hero.png'
 import vueLogo from '../assets/vue.svg'
 
 const count = ref(0)
+
+const emit = defineEmits<{
+  (e: 'navigate', page: 'brawlers'): void;
+}>();
+
+const goToBrawlers = () => {
+  emit('navigate', 'brawlers');
+};
 </script>
 
 <template>
@@ -20,6 +28,9 @@ const count = ref(0)
     </div>
     <button type="button" class="counter" @click="count++">
       Count is {{ count }}
+    </button>
+    <button type="button" class="brawlers-btn" @click="goToBrawlers">
+      🎮 Go to Brawlers
     </button>
   </section>
 

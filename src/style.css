@@ -106,13 +106,39 @@ code {
   background: var(--accent-bg);
   border: 2px solid transparent;
   transition: border-color 0.3s;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 
   &:hover {
     border-color: var(--accent-border);
   }
   &:focus-visible {
     outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+.brawlers-btn {
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  color: #fff;
+  background: linear-gradient(180deg, #FFD700 0%, #FF8C00 100%);
+  border: 3px solid #000;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.15s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 0 rgba(0, 0, 0, 0.3);
+  }
+  &:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+  }
+  &:focus-visible {
+    outline: 2px solid #FFD700;
     outline-offset: 2px;
   }
 }
