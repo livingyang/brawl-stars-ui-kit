@@ -13,6 +13,7 @@ const meta = {
   argTypes: {
     size: { control: 'select', options: ['small', 'medium', 'large'] },
     backgroundColor: { control: 'color' },
+    ariaLabel: { control: 'text' },
   },
   args: {
     primary: false,

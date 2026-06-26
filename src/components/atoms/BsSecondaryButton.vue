@@ -3,6 +3,7 @@
     class="bs-secondary-button"
     :style="buttonStyle"
     :disabled="disabled"
+    :aria-label="ariaLabel"
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
     @mousedown="onMouseDown"
@@ -20,6 +21,7 @@ export interface BsSecondaryButtonProps {
   label: string;
   disabled?: boolean;
   size?: 'large' | 'medium' | 'small';
+  ariaLabel?: string;
 }
 
 const props = withDefaults(defineProps<BsSecondaryButtonProps>(), {
@@ -60,6 +62,8 @@ const buttonStyle = computed(() => {
   }
   return style;
 });
+
+const ariaLabel = computed(() => props.ariaLabel || props.label);
 
 const onMouseEnter = () => {
   if (!props.disabled) isHovered.value = true;

@@ -1,5 +1,5 @@
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
+  <button type="button" :class="classes" @click="onClick" :style="style" :aria-label="ariaLabel">{{ label }}</button>
 </template>
 
 <script lang="ts" setup>
@@ -25,6 +25,10 @@ const props = withDefaults(
      * background color of the button
      */
     backgroundColor?: string;
+    /**
+     * Accessible label for the button
+     */
+    ariaLabel?: string;
   }>(),
   { primary: false }
 );
@@ -43,6 +47,8 @@ const classes = computed(() => ({
 const style = computed(() => ({
   backgroundColor: props.backgroundColor,
 }));
+
+const ariaLabel = computed(() => props.ariaLabel || props.label);
 
 const onClick = () => {
   emit('click', 1);

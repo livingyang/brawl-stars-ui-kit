@@ -4,6 +4,7 @@
     :class="{ locked }"
     :style="buttonStyle"
     :disabled="disabled"
+    :aria-label="ariaLabel"
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
     @mousedown="onMouseDown"
@@ -23,6 +24,7 @@ export interface BsPrimaryButtonProps {
   disabled?: boolean;
   locked?: boolean;
   size?: 'large' | 'medium';
+  ariaLabel?: string;
 }
 
 const props = withDefaults(defineProps<BsPrimaryButtonProps>(), {
@@ -58,6 +60,8 @@ const buttonStyle = computed(() => {
   }
   return style;
 });
+
+const ariaLabel = computed(() => props.ariaLabel || props.label);
 
 const onMouseEnter = () => {
   if (!props.disabled && !props.locked) isHovered.value = true;

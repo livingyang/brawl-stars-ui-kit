@@ -4,6 +4,7 @@
     :class="{ active }"
     :style="buttonStyle"
     :disabled="disabled"
+    :aria-label="ariaLabel"
   >
     <span class="label">{{ label }}</span>
   </button>
@@ -17,6 +18,7 @@ export interface BsTabButtonProps {
   label: string;
   active?: boolean;
   disabled?: boolean;
+  ariaLabel?: string;
 }
 
 const props = withDefaults(defineProps<BsTabButtonProps>(), {
@@ -44,6 +46,8 @@ const buttonStyle = computed(() => {
   }
   return style;
 });
+
+const ariaLabel = computed(() => props.ariaLabel || props.label);
 </script>
 
 <style scoped>

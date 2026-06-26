@@ -4,6 +4,7 @@
     :class="{ locked, glow }"
     :style="buttonStyle"
     :disabled="locked"
+    :aria-label="ariaLabel"
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
     @mousedown="onMouseDown"
@@ -22,6 +23,7 @@ export interface BsRewardButtonProps {
   label: string;
   locked?: boolean;
   glow?: boolean;
+  ariaLabel?: string;
 }
 
 const props = withDefaults(defineProps<BsRewardButtonProps>(), {
@@ -54,6 +56,8 @@ const buttonStyle = computed(() => {
   }
   return style;
 });
+
+const ariaLabel = computed(() => props.ariaLabel || props.label);
 
 const onMouseEnter = () => {
   if (!props.locked) isHovered.value = true;

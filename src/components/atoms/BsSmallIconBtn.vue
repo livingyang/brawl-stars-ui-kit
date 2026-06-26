@@ -3,6 +3,7 @@
     class="bs-small-icon-btn"
     :class="[variant, { active }]"
     :style="buttonStyle"
+    :aria-label="ariaLabel"
   >
     <span class="icon">{{ icon || iconMap[variant] }}</span>
   </button>
@@ -18,6 +19,7 @@ export interface BsSmallIconBtnProps {
   icon?: string;
   variant?: BsSmallIconBtnVariant;
   active?: boolean;
+  ariaLabel?: string;
 }
 
 const props = withDefaults(defineProps<BsSmallIconBtnProps>(), {
@@ -44,6 +46,17 @@ const buttonStyle = computed(() => {
     '--bs-transform-active': BsTransform.active,
   };
   return style;
+});
+
+const ariaLabel = computed(() => {
+  if (props.ariaLabel) return props.ariaLabel;
+  const labelMap: Record<BsSmallIconBtnVariant, string> = {
+    settings: 'Settings',
+    back: 'Back',
+    close: 'Close',
+    info: 'Info',
+  };
+  return labelMap[props.variant];
 });
 </script>
 
