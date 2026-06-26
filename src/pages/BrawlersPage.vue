@@ -44,10 +44,10 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue';
-import { BsColors, BsBorder, BsFont } from '../components/atoms/BsTokens';
-import { BsSmallIconBtn } from '../components/atoms';
-import BrawlerCard from '../components/molecules/BrawlerCard.vue';
-import type { RarityType } from '../components/molecules/BrawlerCard.vue';
+import { BsColors, BsBorder, BsFont } from '../components/basics/BsTokens';
+import { BsSmallIconBtn } from '../components/basics';
+import BrawlerCard from '../components/composites/BrawlerCard.vue';
+import type { RarityType } from '../components/composites/BrawlerCard.vue';
 
 interface BrawlerData {
   name: string;

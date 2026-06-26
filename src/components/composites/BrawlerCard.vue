@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
-import { BsColors, BsBorder, BsFont, BsAnimation, BsTransform } from '../atoms/BsTokens';
+import { BsColors, BsBorder, BsFont, BsAnimation, BsTransform } from '../basics/BsTokens';
 
 export type RarityType = 'trophyRoad' | 'rare' | 'superRare' | 'epic' | 'mythic' | 'legendary';
 
