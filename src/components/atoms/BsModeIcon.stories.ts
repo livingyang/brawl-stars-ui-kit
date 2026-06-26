@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsModeIcon from './BsModeIcon.vue';
 
 const meta: Meta<typeof BsModeIcon> = {
-  title: 'Atoms/BsModeIcon',
+  title: 'Basics/BsModeIcon',
   component: BsModeIcon,
   tags: ['autodocs'],
   argTypes: {

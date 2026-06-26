@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsDividerLine from './BsDividerLine.vue';
 
 const meta: Meta<typeof BsDividerLine> = {
-  title: 'Atoms/BsDividerLine',
+  title: 'Basics/BsDividerLine',
   component: BsDividerLine,
   tags: ['autodocs'],
   argTypes: {

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsBrawlerAvatar from './BsBrawlerAvatar.vue';
 
 const meta: Meta<typeof BsBrawlerAvatar> = {
-  title: 'Atoms/BsBrawlerAvatar',
+  title: 'Basics/BsBrawlerAvatar',
   component: BsBrawlerAvatar,
   tags: ['autodocs'],
   argTypes: {

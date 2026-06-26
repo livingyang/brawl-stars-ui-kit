@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsBadge from './BsBadge.vue';
 
 const meta: Meta<typeof BsBadge> = {
-  title: 'Atoms/BsBadge',
+  title: 'Basics/BsBadge',
   component: BsBadge,
   tags: ['autodocs'],
   argTypes: {

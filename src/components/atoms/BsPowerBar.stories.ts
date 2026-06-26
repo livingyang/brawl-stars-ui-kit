@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsPowerBar from './BsPowerBar.vue';
 
 const meta: Meta<typeof BsPowerBar> = {
-  title: 'Atoms/BsPowerBar',
+  title: 'Basics/BsPowerBar',
   component: BsPowerBar,
   tags: ['autodocs'],
   argTypes: {

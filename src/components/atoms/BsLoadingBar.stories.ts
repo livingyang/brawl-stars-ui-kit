@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsLoadingBar from './BsLoadingBar.vue';
 
 const meta: Meta<typeof BsLoadingBar> = {
-  title: 'Atoms/BsLoadingBar',
+  title: 'Basics/BsLoadingBar',
   component: BsLoadingBar,
   tags: ['autodocs'],
   argTypes: {

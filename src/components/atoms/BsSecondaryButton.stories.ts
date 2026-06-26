@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsSecondaryButton from './BsSecondaryButton.vue';
 
 const meta: Meta<typeof BsSecondaryButton> = {
-  title: 'Atoms/BsSecondaryButton',
+  title: 'Basics/BsSecondaryButton',
   component: BsSecondaryButton,
   tags: ['autodocs'],
   argTypes: {

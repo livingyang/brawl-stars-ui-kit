@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsSmallIconBtn from './BsSmallIconBtn.vue';
 
 const meta: Meta<typeof BsSmallIconBtn> = {
-  title: 'Atoms/BsSmallIconBtn',
+  title: 'Basics/BsSmallIconBtn',
   component: BsSmallIconBtn,
   tags: ['autodocs'],
   argTypes: {

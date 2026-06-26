@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import BrawlersPage from './pages/BrawlersPage.vue';
 </script>
 
 <template>
-  <HelloWorld />
+  <BrawlersPage />
 </template>

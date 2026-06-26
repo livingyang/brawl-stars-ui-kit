@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsGameTitle from './BsGameTitle.vue';
 
 const meta: Meta<typeof BsGameTitle> = {
-  title: 'Atoms/BsGameTitle',
+  title: 'Basics/BsGameTitle',
   component: BsGameTitle,
   tags: ['autodocs'],
   argTypes: {

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsRankTag from './BsRankTag.vue';
 
 const meta: Meta<typeof BsRankTag> = {
-  title: 'Atoms/BsRankTag',
+  title: 'Basics/BsRankTag',
   component: BsRankTag,
   tags: ['autodocs'],
   argTypes: {

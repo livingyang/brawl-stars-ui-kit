@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsResourceChip from './BsResourceChip.vue';
 
 const meta: Meta<typeof BsResourceChip> = {
-  title: 'Atoms/BsResourceChip',
+  title: 'Basics/BsResourceChip',
   component: BsResourceChip,
   tags: ['autodocs'],
   argTypes: {

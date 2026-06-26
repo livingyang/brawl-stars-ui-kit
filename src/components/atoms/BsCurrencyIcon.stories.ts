@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsCurrencyIcon from './BsCurrencyIcon.vue';
 
 const meta: Meta<typeof BsCurrencyIcon> = {
-  title: 'Atoms/BsCurrencyIcon',
+  title: 'Basics/BsCurrencyIcon',
   component: BsCurrencyIcon,
   tags: ['autodocs'],
   argTypes: {

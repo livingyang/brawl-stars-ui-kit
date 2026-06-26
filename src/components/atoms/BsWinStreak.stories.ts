@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsWinStreak from './BsWinStreak.vue';
 
 const meta: Meta<typeof BsWinStreak> = {
-  title: 'Atoms/BsWinStreak',
+  title: 'Basics/BsWinStreak',
   component: BsWinStreak,
   tags: ['autodocs'],
   argTypes: {

@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsTipText from './BsTipText.vue';
 
 const meta: Meta<typeof BsTipText> = {
-  title: 'Atoms/BsTipText',
+  title: 'Basics/BsTipText',
   component: BsTipText,
   tags: ['autodocs'],
   argTypes: {

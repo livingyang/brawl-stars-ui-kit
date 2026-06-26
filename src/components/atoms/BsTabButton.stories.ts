@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 import BsTabButton from './BsTabButton.vue';
 
 const meta: Meta<typeof BsTabButton> = {
-  title: 'Atoms/BsTabButton',
+  title: 'Basics/BsTabButton',
   component: BsTabButton,
   tags: ['autodocs'],
   argTypes: {
